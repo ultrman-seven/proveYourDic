@@ -1,5 +1,7 @@
 # 导管辅助
 
+**课业繁重，开发计划搁置中...**
+
 ## 功能描述
 
 通过手环陀螺仪和加速度计数据，检测导管状态，包括：
@@ -17,12 +19,13 @@
 
 ```mermaid
 flowchart TD
-    app[app start] --> lis[set acc data listener] --> wait[wait for start/end] -->run[start recording data] --> analyze[analyse data & record] --> wait -->e[generate your hand work data and save]
+    app[app start] --> lis[set acc data listener] --> wait[wait for start/end] -->run[start recording data] --> analyze[analyse data & record] --> wait
     subgraph your daily
         porn[take some porn] --> fps[hand work]  --> busy --> shot --> shit[get some shit job done] --> porn
     end
     fps --> band[band acc data start feature detected] --> wait
-    shot  --> be[band acc data end feature detected] -->wait
+    shot --> be[band acc data end feature detected] --> wait
+    wait -->e[generate your hand work data and save] --> wait
 ```
 
 ## 开发平台
